@@ -16,11 +16,13 @@ while(n <= k):
     print(s)
     n += 1
 
-print("Цикл for")
+print("Цикл do-while")
 x = 1
 s = 1
 n = 1
-for i in range(k):
+while True:
     s += math.pow((x*n-1), 3)
     n += 1
     print(s)
+    if n > k:
+        break
